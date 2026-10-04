@@ -1,0 +1,36 @@
+Schoolverlaters: oordeel over aansluiting
+Bron: data/raw/Schoolverlaters dataset.csv (ruwe bron ongewijzigd)
+Kolommen: Vragenlijstnummer en Oordeel aansluiting
+
+Totaal aantal rijen: 3690
+Geldige waarnemingen: 3274
+Uitgesloten rijen (minstens een ongeldig/ontbrekend analyseveld): 416
+Ontbrekend onderwijsniveau ('*' of leeg): 0
+Ontbrekend oordeel ('*' of leeg): 416
+Onbekende onderwijsniveau-labels: 0
+Onbekende oordeel-labels: 0
+Opmerking: de bron bevat tekstlabels; '*' is als ontbrekend behandeld.
+Onderwijsniveau-labels vmbo en havo of vwo volgen de betekenis uit de vraag.
+Oordelen zijn geordend als slecht=1, matig=2, redelijk=3, goed=4.
+
+Totale verdeling:
+  Slecht: 156 (4.76%)
+  Matig: 561 (17.14%)
+  Redelijk: 1229 (37.54%)
+  Goed: 1328 (40.56%)
+
+Uitkomsten per onderwijsgroep:
+  vmbo (n=2476): mediaan=3.0; redelijk/goed=76.78%
+    Slecht: 130 (5.25%)
+    Matig: 445 (17.97%)
+    Redelijk: 927 (37.44%)
+    Goed: 974 (39.34%)
+  havo/vwo (n=798): mediaan=3.0; redelijk/goed=82.21%
+    Slecht: 26 (3.26%)
+    Matig: 116 (14.54%)
+    Redelijk: 302 (37.84%)
+    Goed: 354 (44.36%)
+
+Verschil redelijk/goed (havo/vwo minus vmbo): +5.43 procentpunt
+Percentages zijn berekend op geldige antwoorden; groepspercentages tellen op tot 100%.
+Totaal n voor de verdeling: 3274

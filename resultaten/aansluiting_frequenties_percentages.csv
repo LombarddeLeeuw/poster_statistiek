@@ -1,0 +1,13 @@
+﻿onderwijsgroep;oordeel;frequentie;percentage_binnen_groep;n_geldig_groep;mediaan_ordinaal;percentage_redelijk_goed;verschil_pp_havo_vwo_min_vmbo
+Totaal;Slecht;156;4,7648;3274;;;5,4285
+Totaal;Matig;561;17,1350;3274;;;5,4285
+Totaal;Redelijk;1229;37,5382;3274;;;5,4285
+Totaal;Goed;1328;40,5620;3274;;;5,4285
+vmbo;Slecht;130;5,2504;2476;3,0000;76,7771;5,4285
+vmbo;Matig;445;17,9725;2476;3,0000;76,7771;5,4285
+vmbo;Redelijk;927;37,4394;2476;3,0000;76,7771;5,4285
+vmbo;Goed;974;39,3376;2476;3,0000;76,7771;5,4285
+havo/vwo;Slecht;26;3,2581;798;3,0000;82,2055;5,4285
+havo/vwo;Matig;116;14,5363;798;3,0000;82,2055;5,4285
+havo/vwo;Redelijk;302;37,8446;798;3,0000;82,2055;5,4285
+havo/vwo;Goed;354;44,3609;798;3,0000;82,2055;5,4285

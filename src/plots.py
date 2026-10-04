@@ -20,6 +20,10 @@ def safe_plot_path(output_dir, name):
     os.makedirs(output_dir, exist_ok=True)
     return os.path.join(output_dir, name)
 
+def uses_kde(series):
+    values = series.dropna()
+    return not values.empty and not np.all(np.isclose(values, np.round(values)))
+
 def plot_correlation_matrix(df, output_path):
     plt.figure(figsize=(14, 12))  # Verander de figuurgrootte indien nodig
     
@@ -51,7 +55,8 @@ def plot_income_distribution(df, output_path):
         raise ValueError(f"Kan inkomen niet vinden in kolommen: {list(df.columns)}")
 
     plt.figure(figsize=(10, 6))
-    sns.histplot(df[income_col].dropna(), bins=30, kde=True)
+    income = df[income_col].dropna()
+    sns.histplot(income, bins=30, kde=uses_kde(income))
     plt.title(f"Verdeling van {income_col}")
     plt.xlabel(income_col)
     plt.ylabel("Aantal")
@@ -66,7 +71,8 @@ def plot_age_distribution(df, output_path):
         raise ValueError(f"Kan leeftijd niet vinden in kolommen: {list(df.columns)}")
 
     plt.figure(figsize=(10, 6))
-    sns.histplot(df[age_col].dropna(), bins=30, kde=True)
+    age = df[age_col].dropna()
+    sns.histplot(age, bins=30, kde=uses_kde(age))
     plt.title(f"Verdeling van {age_col}")
     plt.xlabel(age_col)
     plt.ylabel("Aantal")
@@ -130,7 +136,8 @@ def plot_histogram_numeric(df, output_dir):
     numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
     for col in numeric_cols[:10]:
         plt.figure(figsize=(8, 5))
-        sns.histplot(df[col].dropna(), bins=20, kde=True, edgecolor="black")
+        values = df[col].dropna()
+        sns.histplot(values, bins=20, kde=uses_kde(values), edgecolor="black")
         plt.xlabel(col)
         plt.ylabel("Aantal")
         plt.title(f"Histogram: {col}")
