@@ -4,15 +4,20 @@ Dit project analyseert gegevens van schoolverlaters.
 
 ## Dataset
 
-De dataset bevat informatie over onder andere:
+De dataset bevat informatie over:
 
-- Geslacht
+- Opleidingsniveau-
+- Geslacht 
+- Oordeel keuzemogelijkheden
+- Oordeel moeilijkheidsgraad
+- Arbeidsuren_per_week
+- Bruto_maandinkomen
 - Leeftijd
-- Arbeidsuren per week
-- Bruto maandinkomen
-- Opleidingsniveau van ouders
-- Vervolgopleiding
-- Oordeel over aansluiting
+- Gaan doen na vmbo
+- Opleidingsniveau moeder
+- Opleidingsniveau vader 
+- Oordeel aansluiting
+- Vervolgopleiding nog steeds volgen
 
 ## Uitvoeren
 
